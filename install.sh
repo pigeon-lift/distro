@@ -185,19 +185,13 @@ if [[ $(echo $SHELL | grep bash) ]]; then
 elif [[ $(echo $SHELL | grep zsh) ]]; then
     RC_FILE=$HOME/.zshrc
 else
-    echo "
 
-Non-standard shell $SHELL detected. You might want to
-add the following lines to your shell profile:
-
-. $PREFIX/bin/torch-activate
-"
 fi
 
 WRITE_PATH_TO_PROFILE=0
 if [[ $BATCH_INSTALL == 0 ]]; then
     if [ -f "$RC_FILE" ]; then
-        echo "
+
 
 WRITE_PATH_TO_PROFILE=1
 
