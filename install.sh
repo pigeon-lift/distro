@@ -206,13 +206,4 @@ if [[ $WRITE_PATH_TO_PROFILE == 1 ]]; then
 
 . $PREFIX/bin/torch-activate" >> "$HOME"/.profile"
 
-else
-    echo "
-
-Not updating your shell profile.
-You might want to
-add the following lines to your shell profile:
-
-. $PREFIX/bin/torch-activate
-"
 fi
