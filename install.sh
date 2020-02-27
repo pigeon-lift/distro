@@ -184,8 +184,6 @@ if [[ $(echo $SHELL | grep bash) ]]; then
     RC_FILE=$HOME/.bashrc
 elif [[ $(echo $SHELL | grep zsh) ]]; then
     RC_FILE=$HOME/.zshrc
-else
-
 fi
 
 WRITE_PATH_TO_PROFILE=0
